@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Obsidian
+.trash/
+
+# Quartz
+.quartz-cache/
+public/
+
+# Node
+node_modules/
+
+# Logs
+*.log
