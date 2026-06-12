@@ -60,7 +60,7 @@ tags:
 ---  
 # 작은 할일
 ```tasks  
-(path includes YoHan_Private/Inbox/Tasks) OR (path includes YoHan_Private/Actions/Tasks)
+path includes Tasks
 status.type is not ON_HOLD
 not done  
 created before {{date}}
@@ -70,7 +70,7 @@ short mode
 ---
 # {{date}} 완료
 ```tasks
-(path includes YoHan_Private/Inbox/Tasks) OR (path includes YoHan_Private/Actions/Tasks)
+path includes Tasks
 done on {{date}}
 short mode
 ```  
@@ -98,7 +98,7 @@ short mode
 
 # 큰 할일
 ```tasks  
-(path includes YoHan_Private/Inbox/Tasks) OR (path includes YoHan_Private/Actions/Tasks)
+path includes Tasks
 status.type is ON_HOLD
 created before {{date}}
 short mode
