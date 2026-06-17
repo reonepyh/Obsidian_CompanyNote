@@ -1,5 +1,7 @@
 module.exports = async (tp) => {
     const file = app.workspace.getActiveFile();
+    if (!file) return "";
+
     let content = await app.vault.read(file);
 
     const headers = content.match(/^#{1,6}\s+.+$/gm) || [];
@@ -65,4 +67,5 @@ module.exports = async (tp) => {
 
     await app.vault.modify(file, updated);
 
+    return "";
 };
